@@ -1,5 +1,5 @@
 # Stage 1: Build the React + Vite app
-FROM node:18-alpine AS builder
+FROM node:22-alpine AS builder        # ← CHANGED 18 to 22
 
 WORKDIR /app
 
@@ -14,7 +14,6 @@ FROM nginx:alpine
 
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Nginx config for React Router (handles page refresh)
 RUN echo 'server { \
   listen 8080; \
   location / { \
