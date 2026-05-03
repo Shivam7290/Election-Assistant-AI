@@ -4,10 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+
+    <!-- SEO & Accessibility Meta Tags -->
+    <meta name="description" content="AI-powered Election Assistant to help voters get accurate and unbiased election information." />
+    <meta name="keywords" content="election, AI assistant, voting, democracy, election information" />
+    <meta name="author" content="Shivam" />
+    <meta name="theme-color" content="#1a73e8" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Election Assistant AI" />
+    <meta property="og:description" content="AI-powered Election Assistant to help voters get accurate and unbiased election information." />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QFG8PQZXB9');
+    </script>
+
+    <title>Election Assistant AI</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root" role="application" aria-label="Election Assistant AI Application"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
