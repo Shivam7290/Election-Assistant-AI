@@ -1,5 +1,5 @@
 # Stage 1: Build the React + Vite app
-FROM node:22-alpine AS builder        # ← CHANGED 18 to 22
+FROM node:22-alpine AS builder        
 
 WORKDIR /app
 
